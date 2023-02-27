@@ -44,6 +44,7 @@ public class Main {
             while (!answer.equals("q") && i < kevinBaconMovies.size()) {
                 if (kevinBaconMovies.get(i).getActors().contains(answer) && !answer.equals("q")) {
                     System.out.println(answer + " -> " + kevinBaconMovies.get(i).getTitle() + " -> Kevin Bacon");
+                    System.out.println("Bacon Number of 1");
                     answer = "q";
                 }
                 i++;
@@ -58,6 +59,7 @@ public class Main {
                             for (SimpleMovie movie : kevinBaconMovies) {
                                 if (movie.getActors().contains(actor) && !answer.equals("q")) {
                                     System.out.println(answer + " -> " + actorMovie.getTitle() + " -> " + actor + " -> " + movie.getTitle() + " -> Kevin Bacon");
+                                    System.out.println("Bacon Number of 2");
                                     answer = "q";
                                 }
                             }
@@ -101,6 +103,7 @@ public class Main {
                                         for (SimpleMovie movie : kevinBaconMovies) {
                                             if (movie.getActors().contains(actor) && !answer.equals("q")) {
                                                 System.out.println(answer + " -> " + movieFromActor.getTitle() + " -> " + friendsWithActor.get(j) + " -> " + actorMovie.getTitle() + " -> " + actor + " -> " + movie.getTitle() + " -> Kevin Bacon");
+                                                System.out.println("Bacon Number of 3");
                                                 answer = "q";
                                             }
                                         }
