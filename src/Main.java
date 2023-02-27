@@ -12,7 +12,6 @@ public class Main {
         ArrayList<String> kevinBaconFriends = MovieDatabaseBuilder.getActorsDB("src/KevinBaconActors.txt");
         ArrayList<SimpleMovie> actorMovies = MovieDatabaseBuilder.getActorMoviesDB("src/KevinBaconActorMovies.txt");
         ArrayList<SimpleMovie> kevinBaconMovies = MovieDatabaseBuilder.getKevinBaconMovies("src/kevinBaconMovies.txt");
-        ArrayList<String> secondDegreeActors = MovieDatabaseBuilder.get2ndDegreeActorsDB("src/SecondDegreeActors.txt");
         Collections.sort(kevinBaconFriends);
         for (int i = 0; i < actorMovies.size(); i++) {
             int maxIndex = i;
